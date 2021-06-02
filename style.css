@@ -1,0 +1,503 @@
+body {
+    font: 400 16px Jost, sans-serif;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: sticky !important;
+    top: 0;
+    z-index: 9999;
+    background-color: black;
+    min-height: 80px;
+}
+
+header .navbar-brand {
+    margin-left: 1.2vw;
+}
+
+header button {
+    display: none;
+}
+
+header .nav-link a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 20px 1.5vw;
+}
+
+header .nav-link a:hover {
+    color: orange;
+}
+
+section.banner {
+    background-image: url(img/camera-wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 15px;
+}
+
+section.banner .container {
+    position: relative;
+}
+
+section.banner h1 {
+    color: aliceblue;
+    font-size: 4rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+section.banner p {
+    color: aliceblue;
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+section.banner button {
+    padding: 15px 25px;
+    min-width: 250px;
+    border: none;
+    background-color: orange;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 5px;
+    font-size: 0.8rem;
+}
+
+section.banner button:hover {
+    background-color: black;
+    color: orange;
+}
+
+section.director {
+    min-height: 500px;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+section.director .caption {
+    flex: 2;
+    min-width: 500px;
+    min-height: 400px;
+    padding: 40px 0;
+    background-image: url(img/black-abstrak-background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.director .caption h1,
+section.director .caption h2,
+section.director .caption p {
+    color: aliceblue;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.director .caption h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+section.director .caption h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-top: 10px;
+    color: dimgray;
+}
+
+section.director .caption p {
+    margin-top: 20px;
+    color: darkgray;
+    font-size: 1.2rem;
+}
+
+section.director .bg {
+    flex: 1;
+    min-width: 300px;
+    background-position: center top;
+    background-image: url(img/Cristopher-Nolan.jpg);
+    background-size: cover;
+    min-height: 500px;
+}
+
+section.our-product {
+    position: relative;
+    background-color: aliceblue;
+}
+
+section.our-product > h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.our-product .film {
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.our-product .film figure {
+    flex: 1;
+    min-width: 576px;
+    margin: 0;
+    text-align: center;
+    background-position: center top;
+    background-size: cover;
+    transition: 0.3s ease;
+}
+
+section.our-product .film figure figcaption {
+    background-color: #000000de;
+    padding: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+section.our-product .film figure:hover {
+    transition: 0.3s ease;
+    
+}
+
+section.our-product .film figure figcaption:hover {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+section.our-product .film figure figcaption h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+}
+
+section.our-product .film figure figcaption h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: dimgrey;
+}
+
+section.our-product .film figure figcaption p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: darkgray;
+}
+
+section.our-product .film figure:nth-child(1) {
+    background-image: url(img/the-dark-knight.jpg);
+}
+
+section.our-product .film figure:nth-child(2) {
+    background-image: url(img/Inception.jpg);
+}
+
+section.our-product .film figure:nth-child(3) {
+    background-image: url(img/Interstellar.jpg);
+}
+
+section.our-product .film figure:nth-child(4) {
+    background-image: url(img/Tenet.jpg);
+}
+
+section.our-product .nav-link {
+    padding: 20px;
+    text-align: center;
+}
+
+section.our-product .nav-link a button {
+    padding: 15px 25px;
+    min-width: 250px;
+    border: none;
+    background-color: orange;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 5px;
+    font-size: 0.8rem;
+}
+
+section.our-product .nav-link a button:hover {
+    background-color: black;
+    color: orange;
+}
+
+section.contact {
+    display: flex;
+    min-height: 700px;
+    flex-wrap: wrap;
+}
+
+section form {
+    flex: 1;
+    padding: 30px 0;
+    min-width: 500px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/black-abstrak-background.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section form h1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: italic;
+    color: aliceblue;
+}
+
+section form select,
+section form input {
+    width: 80%;
+    color: aliceblue;
+    margin: 10px auto;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #131313;
+    outline: none;
+}
+
+section form input[type="submit"] {
+    background-color: orange;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section form input[type="submit"]:hover {
+    background-color: black;
+    color: orange;
+}
+
+section form input::placeholder {
+    color: #4d4d4d;
+}
+
+section .bg {
+    flex: 1;
+    min-height: 500px;
+    min-width: 400px;
+    background-size: cover;
+    background-position: center top;
+    background-image: url(img/Chris-Hemsworth.jpg);
+}
+
+footer .site-map {
+    background-color: #131313;
+    color: #4d4d4d;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    min-height: 300px;
+}
+
+footer .site-map .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .site-map .child {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    min-width: 200px;
+}
+
+footer .site-map .child:nth-child(3) {
+    min-width: 250px;
+}
+
+footer .site-map .child h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 800;
+    font-style: italic;
+}
+
+footer .site-map .child p {
+    margin-top: 20px;
+    width: 90%;
+}
+
+footer .site-map .child input {
+    padding: 13px 20px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: #333333;
+}
+
+footer .site-map .child .nav-link {
+    padding: 0;
+    margin-top: 20px;
+    color: #4d4d4d;
+}
+
+footer .site-map .child .nav-link a {
+    color: #4d4d4d;
+}
+
+footer .site-map .child .nav-link a:hover {
+    color: orange;
+}
+
+footer .copyright {
+    min-height: 60px;
+    display: flex;
+    color: #383838;
+    align-items: center;
+}
+
+@media screen and (max-width:992px) {
+    header .nav-link {
+        position: absolute;
+        background-color: black;
+        top: 80px;
+        left: -100%;
+        display: flex;
+        padding: 0;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        transition: 0.3s ease;
+        min-height: calc(100vh - 80px);
+    }
+    header .showMenu {
+        left: 0;
+        transition: 0.3s ease;
+    }
+    header .nav-link a {
+        width: 100%;
+    }
+    header .nav-link a:hover {
+        color: orange;
+    }
+    header .navbar-brand {
+        margin-left: 15px;
+    }
+    header button {
+        display: block;
+        margin-right: 15px;
+        padding: 0;
+        background: none;
+        border: none;
+    }
+    header button i {
+        color: aliceblue;
+    }
+    header button i:hover {
+        color: orange;
+    }
+    section.banner h1 {
+        font-size: 3.5rem;
+    }
+    section.banner button {
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    section.banner h1 {
+        font-size: 2.7rem;
+    }
+    section.banner p {
+        font-size: 1.2rem;
+    }
+    section.banner button {
+        width: 100%;
+        margin: 10px 0;
+    }
+    section.director .caption {
+        min-width: 100%;
+        text-align: center;
+    }
+    section.director .caption h1 {
+        font-size: 2.2rem;
+    }
+    section.director .caption h2 {
+        font-size: 1.2rem;
+    }
+    section.director .caption p {
+        font-size: 1rem;
+    }
+    section.director .bg {
+        min-width: 100%;
+    }
+    section.our-product .film figure {
+        min-width: 100%;
+    }
+    section.our-product .film figure figcaption {
+        padding: 30px;
+    }
+    section.our-product > h1 {
+        font-size: 2.5rem;
+    }
+    section.our-product .film figure figcaption h1 {
+        font-size: 2rem;
+    }
+    section form {
+        min-width: 100%;
+    }
+    section .bg {
+        min-width: 100%;
+    }
+    footer .site-map .child {
+        text-align: center;
+        align-items: center;
+        min-width: 100%;
+    }
+    footer .site-map .child input {
+        text-align: center;
+        width: 100%;
+    }
+    footer .site-map .child img {
+        margin: auto;
+    }   
+    footer .copyright {
+        padding: 15px;
+        text-align: center;
+    }
+}
